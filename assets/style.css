@@ -1,17 +1,18 @@
 body{
-
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Whole body */
 
 .extension{
-
+    width: 300px;
+    height: 300px;
 }
 
 /* Header */
 
 .header{
-
+    display: flex;
 }
 
 .logo{
@@ -19,6 +20,10 @@ body{
 }
 
 .title{
+
+}
+
+.titleText{
 
 }
 

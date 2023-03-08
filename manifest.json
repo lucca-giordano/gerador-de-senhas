@@ -1,5 +1,13 @@
 {
-    "manifest_version" : 3,
+    "manifest_version" : 2,
     "name" : "Gerador de senhas",
-    "version" : "1.0"
+    "version" : "0.0.1",
+
+    "description" : "Uma aplicação para gerar senhas aleatórias",
+    "author" : "Lucca Giordano",
+    "browser_action" : {
+        "default_title" : "Gerador de senhas",
+        "default_popup" : "index.html"
+
+    }
 }

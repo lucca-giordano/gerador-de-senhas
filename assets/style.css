@@ -13,10 +13,16 @@ body{
 
 .header{
     display: flex;
+    align-items: center;
 }
 
 .logo{
 
+}
+
+.logoimg{
+    width: 90%;
+    height: 90%;
 }
 
 .title{
@@ -24,7 +30,7 @@ body{
 }
 
 .titleText{
-
+    white-space: nowrap;
 }
 
 /* main content */
@@ -44,6 +50,10 @@ body{
 }
 
 .copy{
+
+}
+
+.generate{
 
 }
 

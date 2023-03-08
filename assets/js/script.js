@@ -6,6 +6,7 @@ function generateRandomPassword(length) {
     for (let i = 0; i < length; i++) {
         password += charset[values[i] % charset.length];
     }
+    console.log(password);
     return password;
 }
 

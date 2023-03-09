@@ -2,13 +2,10 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="script" href="assets/js/script.js">
-    <link rel="reset" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="assets/js/script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,10 +28,14 @@
                 <div class="generate"></div>
             </div>
             <div class="slider">
-                <div class="manualam"></div>
-                    <input type="number" min="1" value="15" class="numselector">
+                <div class="manualam">
+                    <input type="number" min="1" max="50" value="15" class="numselector">
+                </div>
                 <div class="autoam">
-                    <input type="range" min="1" max="50" value="15" class="sliderselector" >
+                    <input type="range" min="1" max="50" value="15" class="sliderselector">
+                </div>
+                <div class="text">
+                    <h3 class="slider-value">15</h3>
                 </div>
             </div>
             <div class="options">

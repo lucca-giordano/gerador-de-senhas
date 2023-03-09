@@ -5,6 +5,12 @@
 
     "description" : "Uma aplicação para gerar senhas aleatórias",
     "author" : "Lucca Giordano",
+    "permissions" : [
+        "activeTab",
+        "tabs",
+        "contextMenus",
+        "notifications"
+    ],
     "browser_action" : {
         "default_title" : "Gerador de senhas",
         "default_popup" : "index.html"

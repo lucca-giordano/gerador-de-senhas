@@ -10,16 +10,21 @@ function generateRandomPassword(length) {
     return password;
 }
 
-console.log(generateRandomPassword(12));
 
 
-const slider = document.querySelector('.sliderselector');
-const input = document.querySelector('.numselector');
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.sliderselector');
+    const number = document.querySelector('.numselector')
 
-slider.addEventListener('input', function(){
-    input.value = slider.value;
-})
+    const output = document.querySelector('.slider-value');
+    
+    slider.addEventListener('input', function() {
+        output.textContent = this.value;
+        number.value = this.value;
+    });
 
-input.addEventListener('input', function(){
-    slider.value = input.value;
-})
+    number.addEventListener('input', function() {
+        output.textContent = this.value;
+        slider.value = this.value;
+    });
+});

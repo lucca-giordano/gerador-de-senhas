@@ -11,3 +11,15 @@ function generateRandomPassword(length) {
 }
 
 console.log(generateRandomPassword(12));
+
+
+const slider = document.querySelector('.sliderselector');
+const input = document.querySelector('.numselector');
+
+slider.addEventListener('input', function(){
+    input.value = slider.value;
+})
+
+input.addEventListener('input', function(){
+    slider.value = input.value;
+})

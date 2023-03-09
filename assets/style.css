@@ -29,13 +29,15 @@ body{
 
 }
 
-.titleText{
+.titletext{
     white-space: nowrap;
 }
 
 /* main content */
 
 .content{
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -60,14 +62,28 @@ body{
 /* Pass size slider */
 
 .slider{
+    display: flex;
+    align-items: start;
 
 }
 
 .manualam{
+    width: 50px;
+}
 
+.numselector{
+    width: 50px;
+}
+
+.numselector::-webkit-inner-spin-button{
+    opacity: 1;
 }
 
 .autoam{
+
+}
+
+.sliderselector{
 
 }
 
@@ -96,9 +112,17 @@ body{
 /* Footer */
 
 .footer{
-
+    width: 100%;
+    height: 15px;
+    font-size: 13px;
 }
 
 .info{
+}
 
+.infotext{
+
+}
+
+.infotextp{
 }

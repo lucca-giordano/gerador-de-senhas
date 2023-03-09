@@ -21,7 +21,7 @@
 
         <div class="header">
             <div class="logo"> <img src="assets/img/logo.svg" class="logoimg" alt="Logo do programa, cadeado fechado"> </div>
-            <div class="title"> <h1 class="titleText">Gerador de Senhas</h1> </div>
+            <div class="title"> <h1 class="titletext">Gerador de Senhas</h1> </div>
         </div>
 
         <div class="content">
@@ -32,7 +32,10 @@
             </div>
             <div class="slider">
                 <div class="manualam"></div>
-                <div class="autoam"></div>
+                    <input type="number" min="1" value="15" class="numselector">
+                <div class="autoam">
+                    <input type="range" min="1" max="50" value="15" class="sliderselector" >
+                </div>
             </div>
             <div class="options">
                 <div class="tall"></div>
@@ -43,9 +46,12 @@
         </div>
 
         <div class="footer">
-            <div class="info"></div>
+            <div class="info">
+                <div class="infotext">
+                    <p class="infotextp">Feito por <a href="https://github.com/lucca-giordano">Lucca Giordano</a>, armazenado em <a href="https://github.com/lucca-giordano/gerador-de-senhas">github.com</a> </p>
+                </div>
+            </div>
         </div>
-
     </div>
 
 </body>

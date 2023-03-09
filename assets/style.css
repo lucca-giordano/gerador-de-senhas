@@ -200,7 +200,7 @@ body{
 /* Pass options */
 
 .options{
-
+    margin-top: 3px;
 }
 
 .tall{
@@ -217,6 +217,10 @@ body{
 
 .sym{
 
+}
+
+label{
+    color: #EEEEEE;
 }
 
 /* Footer */

@@ -219,6 +219,22 @@ body{
 
 }
 
+.tallcheck{
+    cursor: pointer;
+}
+
+.smallcheck{
+    cursor: pointer;
+}
+
+.numcheck{
+    cursor: pointer;
+}
+
+.symcheck{
+    cursor: pointer;
+}
+
 label{
     color: #EEEEEE;
 }

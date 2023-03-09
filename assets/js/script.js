@@ -15,16 +15,22 @@ function generateRandomPassword(length) {
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.querySelector('.sliderselector');
     const number = document.querySelector('.numselector')
-
-    const output = document.querySelector('.slider-value');
     
     slider.addEventListener('input', function() {
-        output.textContent = this.value;
         number.value = this.value;
     });
 
     number.addEventListener('input', function() {
-        output.textContent = this.value;
         slider.value = this.value;
     });
+
+
+    const passdisplay = document.querySelector('.passdisplay');
+    const button = document.querySelector('.passbutton');
+    button.addEventListener('click', () => {
+        const password = generateRandomPassword(slider.value);
+        passdisplay.value = password;
+    });
+
+
 });

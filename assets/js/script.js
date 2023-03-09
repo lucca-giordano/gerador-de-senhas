@@ -26,11 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const passdisplay = document.querySelector('.passdisplay');
-    const button = document.querySelector('.passbutton');
-    button.addEventListener('click', () => {
+    const generatebutton = document.querySelector('.passbutton');
+    generatebutton.addEventListener('click', () => {
         const password = generateRandomPassword(slider.value);
         passdisplay.value = password;
     });
 
-
+    const copybutton = document.querySelector('.copybutton');
+    copybutton.addEventListener('click', () => {
+        passdisplay.select();
+        document.execCommand('copy');
+    });
 });

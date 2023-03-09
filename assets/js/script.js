@@ -1,5 +1,27 @@
 function generateRandomPassword(length) {
-    const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=';
+
+    let charset = ''
+
+    const maiusculas = document.querySelector('.tallcheck')
+    if(maiusculas.checked){
+        charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    }
+
+    const minusculas = document.querySelector('.smallcheck')
+    if(minusculas.checked){
+        charset += 'abcdefghijklmnopqrstuvwxyz'
+    }
+
+    const numeros = document.querySelector('.numcheck')
+    if(numeros.checked){
+        charset += '0123456789'
+    }
+
+    const simbolos = document.querySelector('.symcheck')
+    if(simbolos.checked){
+        charset += '!@#$%^&*()_+~`|}{[]:;?><,./-='
+    }
+
     let password = '';
     let values = new Uint32Array(length);
     window.crypto.getRandomValues(values);
